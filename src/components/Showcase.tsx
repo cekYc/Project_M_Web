@@ -31,6 +31,10 @@ const Showcase = () => {
   }, []);
 
   const screenshots = [
+    { src: '/alpha_v0.1.7/gorsel1.png', label: 'Envanter Sistemi — v0.1.7' },
+    { src: '/alpha_v0.1.7/gorsel2.png', label: 'Crafting & Sürükleme — v0.1.7' },
+    { src: '/alpha_v0.1.7/gorsel3.png', label: 'Çakmak Taşı Kılıcı — v0.1.7' },
+    { src: '/alpha_v0.1.7/gorsel4.png', label: 'Oyun İçi HUD — v0.1.7' },
     { src: '/alpha_v0.1.6/yeni_dunya_olusumu_1.png', label: 'Sahil & Okyanus — v0.1.6' },
     { src: '/alpha_v0.1.6/yeni_dunya_olusumu_2.png', label: 'Orman & Tepeler — v0.1.6' },
     { src: '/alpha_v0.1.5/gorsel_1.png', label: 'Ana Menü — v0.1.5' },

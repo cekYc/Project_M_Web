@@ -35,19 +35,119 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.1.6 ========= */}
+        {/* ========= v0.1.7 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.6</span>
+              <span className="version-number">v0.1.7</span>
               <span className="version-tag latest">En Yeni</span>
+            </div>
+            <a
+              href="/alpha_v0.1.7/project_m_alpha_v0.1.7.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.1.7)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">✨</span> Yeni Özellikler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Gelişmiş Envanter Sistemi:</strong> 3 satır × 5 sütun (sağ ve sol)
+                    toplam 30 slotluk Minecraft benzeri envanter, <code>ui.frag</code> üzerinden
+                    sıfırdan tasarlandı.
+                  </li>
+                  <li>
+                    <strong>Eşya Sayıları (Text Rendering):</strong> Envanterdeki tüm eşyaların
+                    miktarları sağ alt köşede sayı olarak görünüyor. Sürüklenen eşyalarda sarı renk.
+                  </li>
+                  <li>
+                    <strong>Dinamik Üretim (Crafting):</strong> The Forest tarzı üretim matı — konan
+                    eşyalar anlık analiz ediliyor ve eşleşen tarif ikonu dinamik olarak beliriyor.
+                  </li>
+                  <li>
+                    <strong>Stack Birleştirme & Bölme:</strong> Sol tıkla yığın birleştirme (Maks 128),
+                    sağ tıkla tek eşya bırakma.
+                  </li>
+                  <li>
+                    <strong>Yeni Materyaller:</strong> Çubuk, Bitki Halatı, Çakmak Taşı ve
+                    Keskin Çakmak Taşı gibi yeni doğal malzemeler eklendi.
+                  </li>
+                  <li>
+                    <strong>Çakmak Taşı Kılıcı:</strong> Yeni ara eşyalar ve craft zinciriyle
+                    üretilebilen ilk silah tasarlandı.
+                  </li>
+                  <li>
+                    <strong>Düz Eşya Render:</strong> Çubuk, Halat, Kılıç gibi eşyalar artık 2D
+                    ikon olarak Texture Atlas ile görünüyor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Gallery */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📸 Ekran Görüntüleri
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.7/gorsel1.png"
+                      alt="v0.1.7 - Envanter Sistemi"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.7/gorsel2.png"
+                      alt="v0.1.7 - Crafting & Sürükleme"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.7/gorsel3.png"
+                      alt="v0.1.7 - Çakmak Taşı Kılıcı"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.7/gorsel4.png"
+                      alt="v0.1.7 - Oyun İçi HUD"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.1.6 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.1.6</span>
+              <span className="version-tag alpha">Alpha</span>
             </div>
             <a
               href="/alpha_v0.1.6/project_m_alpha_v0.1.6.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.1.6)</span>
+              İndir (v0.1.6)
             </a>
           </div>
 

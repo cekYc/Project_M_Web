@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.1.7 — Şimdi Yayında
+          Alpha v0.1.7-hotfix1 — Şimdi Yayında
         </div>
 
         <h1 className="hero-title">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.1.7</div>
+            <div className="hero-stat-value">v0.1.7-hf1</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

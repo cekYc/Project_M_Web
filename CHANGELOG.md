@@ -4,6 +4,13 @@ Bu dosya, oyun motoruna eklenen yeni özellikleri, düzeltilen hataları ve yap�
 
 ---
 
+## [v0.1.7-hotfix1] - 2026-06-09
+
+### Düzeltilen Hatalar (Bug Fixes)
+* **Intel/AMD GPU'larda Oyun Açılmıyordu (Descriptor Pool Hatası):** Vulkan Descriptor Pool oluşturulurken `COMBINED_IMAGE_SAMPLER` tipi için yeterli alan ayrılmıyordu. Her Descriptor Set'te 2 adet sampler (block texture + font texture) kullanılmasına rağmen havuzda sadece 1'er adet yer açılmıştı. NVIDIA sürücüleri bu duruma tolerans gösterirken, Intel Arc ve bazı AMD Radeon sürücüleri `ERROR_OUT_OF_POOL_MEMORY` hatası fırlatıyordu. Havuz boyutu `swapchain_images_count * 2` olarak düzeltildi.
+
+---
+
 ## [v0.1.7] - 2026-06-09
 
 ### Yeni Eklenen Özellikler (New Features)

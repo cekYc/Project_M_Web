@@ -35,11 +35,11 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.1.7 ========= */}
+        {/* ========= v0.1.7-hotfix1 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.7</span>
+              <span className="version-number">v0.1.7-hotfix1</span>
               <span className="version-tag latest">En Yeni</span>
             </div>
             <a
@@ -47,7 +47,7 @@ const Versions = () => {
               download
               className="btn btn-primary btn-sm"
             >
-              <span>⬇ İndir (v0.1.7)</span>
+              <span>⬇ İndir (v0.1.7-hotfix1)</span>
             </a>
           </div>
 
@@ -87,6 +87,22 @@ const Versions = () => {
                   <li>
                     <strong>Düz Eşya Render:</strong> Çubuk, Halat, Kılıç gibi eşyalar artık 2D
                     ikon olarak Texture Atlas ile görünüyor.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🐛</span> Hata Düzeltmeleri
+                  <span className="version-tag alpha" style={{ marginLeft: '0.5rem', fontSize: '0.7rem' }}>hotfix1</span>
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Intel/AMD GPU'larda Oyun Açılmıyordu:</strong> Vulkan Descriptor Pool
+                    oluşturulurken <code>COMBINED_IMAGE_SAMPLER</code> tipi için yeterli alan
+                    ayrılmıyordu. NVIDIA sürücüleri tolerans gösterirken, Intel Arc ve bazı AMD
+                    Radeon sürücüleri <code>ERROR_OUT_OF_POOL_MEMORY</code> hatası fırlatıyordu.
+                    Havuz boyutu düzeltildi.
                   </li>
                 </ul>
               </div>

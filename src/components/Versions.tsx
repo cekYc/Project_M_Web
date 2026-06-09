@@ -69,7 +69,7 @@ const Versions = () => {
                     miktarları sağ alt köşede sayı olarak görünüyor. Sürüklenen eşyalarda sarı renk.
                   </li>
                   <li>
-                    <strong>Dinamik Üretim (Crafting):</strong> The Forest tarzı üretim matı — konan
+                    <strong>Dinamik Üretim (Crafting):</strong> Üretim matına konan
                     eşyalar anlık analiz ediliyor ve eşleşen tarif ikonu dinamik olarak beliriyor.
                   </li>
                   <li>

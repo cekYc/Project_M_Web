@@ -35,19 +35,132 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.1.7-hotfix1 ========= */}
+        {/* ========= v0.1.8 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.7-hotfix1</span>
+              <span className="version-number">v0.1.8</span>
               <span className="version-tag latest">En Yeni</span>
+            </div>
+            <a
+              href="/alpha_v0.1.8/project_m_alpha_v0.1.8.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.1.8)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">✨</span> Yeni Özellikler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Sandık Sistemi (Chest Storage):</strong> 10 Kalas + 2 Çubuk ile
+                    üretilebilen sandık bloğu eklendi. 3×8 (24 slotluk) depolama arayüzü ile
+                    eşyalar kalıcı olarak saklanıyor. Sandık kırıldığında içindekiler envantere aktarılıyor.
+                  </li>
+                  <li>
+                    <strong>Alet Mekanikleri (Tool System):</strong> Balta ile ahşap, kazma ile taş/maden,
+                    kılıç ile yapraklar hızlı kırılıyor. Yanlış aletle sert bloklar 10× yavaş kırılıyor
+                    ve eşya düşmüyor.
+                  </li>
+                  <li>
+                    <strong>Taş → Kırık Taş Dönüşümü:</strong> Kazma ile taş kırıldığında artık
+                    Kırık Taş olarak düşüyor — madencilik ilerleme sisteminin temeli.
+                  </li>
+                  <li>
+                    <strong>Fırın Craft Tarifi:</strong> 12 Kil ile Fırın bloğu üretilebiliyor
+                    (pişirme mekanikleri yakında).
+                  </li>
+                  <li>
+                    <strong>Yarım Basamak (Half Slab):</strong> Yarım yükseklikte çarpışma kutusu,
+                    zıplamadan üstüne çıkılabiliyor.
+                  </li>
+                  <li>
+                    <strong>Dikey Kalas:</strong> Düzgün hizalama, yan yana doğru birleşme
+                    ve saydamlık sorunu yok.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">⚡</span> İyileştirmeler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Shader Güncellemesi:</strong> <code>ui.frag</code> shader'ına sandık UI
+                    render sistemi ve <code>chest_inventory[24]</code> dizisi eklendi.
+                  </li>
+                  <li>
+                    <strong>Kütükten Kalas Üretimi:</strong> Bir kütükten artık 2 kalas üretiliyor
+                    (önceden 1'di).
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Gallery */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📸 Ekran Görüntüleri
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.8/sandik_arayuzu.png"
+                      alt="v0.1.8 - Sandık Arayüzü"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.8/sandik_ve_firin.png"
+                      alt="v0.1.8 - Sandık ve Fırın"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.8/kalas_tanitimlari.png"
+                      alt="v0.1.8 - Kalas ve Yarım Basamaklar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.8/yeni_kazmanin_kazabildikleri.png"
+                      alt="v0.1.8 - Kazma ile Madencilik"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.1.7-hotfix1 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.1.7-hotfix1</span>
+              <span className="version-tag alpha">Alpha</span>
             </div>
             <a
               href="/alpha_v0.1.7/project_m_alpha_v0.1.7.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.1.7-hotfix1)</span>
+              İndir (v0.1.7)
             </a>
           </div>
 

@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image with Ken Burns */}
       <div className="hero-bg">
         <img
-          src="/alpha_v0.1.8/yeni_kazmanin_kazabildikleri.png"
+          src="/alpha_v0.1.9/yeniden_dunya_olusumu_degisti.png"
           alt="Project M World"
           loading="eager"
         />
@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.1.8 — Şimdi Yayında
+          Alpha v0.1.9 — Şimdi Yayında
         </div>
 
         <h1 className="hero-title">
@@ -31,9 +31,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          Yeni nesil voxel tabanlı dünya üretimi. Sandık sistemi, alet mekanikleri,
-          madencilik ilerlemesi ve sınırsız rastgele dünyalarla
-          kendi maceranızı yaratın.
+          Yeni nesil voxel tabanlı dünya üretimi. Gerçek dağlar ve okyanuslar,
+          yerçekimiyle düşen bloklar, yere düşen eşyalar ve sınırsız rastgele
+          dünyalarla kendi maceranızı yaratın.
         </p>
 
         <div className="hero-actions">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.1.8</div>
+            <div className="hero-stat-value">v0.1.9</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

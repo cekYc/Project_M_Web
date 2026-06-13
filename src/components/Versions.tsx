@@ -35,19 +35,149 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.1.8 ========= */}
+        {/* ========= v0.1.9 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.8</span>
+              <span className="version-number">v0.1.9</span>
               <span className="version-tag latest">En Yeni</span>
+            </div>
+            <a
+              href="/alpha_v0.1.9/project_m_alpha_v0.1.9.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.1.9)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">✨</span> Yeni Özellikler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Düşen Blok Animasyonu:</strong> Desteğini kaybeden bloklar (kum, çakıl,
+                    havada kalan yapılar) artık aniden ışınlanmak yerine yerçekimiyle akıcı bir şekilde
+                    düşüyor. Birden fazla blok çökerse hepsi grup halinde birlikte iniyor.
+                  </li>
+                  <li>
+                    <strong>Yere Düşen Eşyalar (Item Entity):</strong> Hayatta Kalma modunda kırılan
+                    bloklar artık doğrudan envantere gitmiyor; kameraya dönük küçük eşyalar olarak yere
+                    düşüyor, hafifçe zıplıyor ve oyuncu yaklaşınca otomatik toplanıyor. Toplanmayan
+                    eşyalar 5 dakika sonra kayboluyor.
+                  </li>
+                  <li>
+                    <strong>Sandık Açma Animasyonu:</strong> Sandığa tıklandığında kapağı ses efektiyle
+                    arkadan menteşeli olarak açılıyor. Açık sandık artık içi oyuk bir kutu olarak çiziliyor —
+                    içine bakılabiliyor.
+                  </li>
+                  <li>
+                    <strong>Yenilenmiş Dünya Oluşumu:</strong> Arazi sistemi baştan yazıldı. Geniş düz
+                    ovalar, yer yer yükselen gerçek dağlar ve okyanuslar bir arada bulunuyor; çok-oktavlı
+                    (FBM) gürültü ile çok daha doğal bir yüzey elde edildi.
+                  </li>
+                  <li>
+                    <strong>Okyanus ve Denizler:</strong> Kıtasallık sistemiyle alçak bölgeler deniz
+                    seviyesinin altına inerek büyük su kütleleri oluşturuyor; kıyılarda kumlu sahiller
+                    bulunuyor. Dağlar yalnızca karada yükseliyor.
+                  </li>
+                  <li>
+                    <strong>Yumuşak Biyom Geçişleri:</strong> Çöl, orman, bataklık ve karlı bölgeler
+                    arasındaki sert sınırlar yumuşatıldı; biyomlar kademeli olarak birbirine karışıyor.
+                  </li>
+                  <li>
+                    <strong>Yenilenmiş Bitki Görünümü:</strong> Çalı, mantar ve sazlık artık düzgün
+                    çapraz (X şeklinde) billboard olarak ve her biri kendi boyutunda çiziliyor.
+                  </li>
+                  <li>
+                    <strong>Lonsdaleit (Katman Kayası):</strong> Dünyanın en alt katmanına kırılması
+                    imkansız blok eklendi — yaratıcılık modunda bile kırılamıyor ve dibe düşmeyi engelliyor.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">⚡</span> İyileştirmeler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Merkezi Blok Tanım Tablosu:</strong> Tüm blok özellikleri (isim, doku,
+                    sertlik, şeffaflık, render tipi) artık tek bir merkezi tabloda
+                    (<code>blocks.rs</code>) toplanıyor — yeni blok eklemek çok daha hızlı ve hatasız.
+                  </li>
+                  <li>
+                    <strong>Akıllı Doğma Sistemi (Safe Spawn):</strong> Oyuncu artık dar bir vadiye
+                    veya dağ tepesine değil; su üstü ve mümkün olduğunca düz bir noktaya yerleştiriliyor.
+                  </li>
+                  <li>
+                    <strong>Doku Düzeltmesi:</strong> Keskin Çakmak Taşı'na ayrı/özel bir doku verildi
+                    (önceden başka bir item ile paylaşıyordu).
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Gallery */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📸 Ekran Görüntüleri
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.9/yeniden_dunya_olusumu_degisti.png"
+                      alt="v0.1.9 - Yenilenmiş Dünya Oluşumu, Dağlar ve Okyanus"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.9/sandik_acilma_animasyonu.png"
+                      alt="v0.1.9 - Sandık Açma Animasyonu"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.9/yapisal_butunluk_artik_animasyonlu.png"
+                      alt="v0.1.9 - Animasyonlu Yapısal Bütünlük (Düşen Bloklar)"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.1.9/yeni_mantar_ve_cali_gorunumu_ve_itemlerin_yere_dusmesi.png"
+                      alt="v0.1.9 - Yeni Mantar/Çalı Görünümü ve Yere Düşen Eşyalar"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.1.8 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.1.8</span>
+              <span className="version-tag alpha">Alpha</span>
             </div>
             <a
               href="/alpha_v0.1.8/project_m_alpha_v0.1.8.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.1.8)</span>
+              İndir (v0.1.8)
             </a>
           </div>
 

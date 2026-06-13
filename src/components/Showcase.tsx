@@ -31,6 +31,10 @@ const Showcase = () => {
   }, []);
 
   const screenshots = [
+    { src: '/alpha_v0.1.9/yeniden_dunya_olusumu_degisti.png', label: 'Dağlar & Okyanus — v0.1.9' },
+    { src: '/alpha_v0.1.9/sandik_acilma_animasyonu.png', label: 'Sandık Açma Animasyonu — v0.1.9' },
+    { src: '/alpha_v0.1.9/yapisal_butunluk_artik_animasyonlu.png', label: 'Düşen Bloklar — v0.1.9' },
+    { src: '/alpha_v0.1.9/yeni_mantar_ve_cali_gorunumu_ve_itemlerin_yere_dusmesi.png', label: 'Mantar & Yere Düşen Eşyalar — v0.1.9' },
     { src: '/alpha_v0.1.7/gorsel1.png', label: 'Envanter Sistemi — v0.1.7' },
     { src: '/alpha_v0.1.7/gorsel2.png', label: 'Crafting & Sürükleme — v0.1.7' },
     { src: '/alpha_v0.1.7/gorsel3.png', label: 'Çakmak Taşı Kılıcı — v0.1.7' },

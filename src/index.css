@@ -899,10 +899,20 @@ img {
   border-color: var(--glass-border-hover);
 }
 
-.gallery-item img {
+.gallery-item img,
+.gallery-item video {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  display: block;
+}
+
+.gallery-cap {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border-top: 1px solid var(--glass-border);
 }
 
 /* ============================

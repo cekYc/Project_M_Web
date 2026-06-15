@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.1.9 — Şimdi Yayında
+          Alpha v0.1.10 — Şimdi Yayında
         </div>
 
         <h1 className="hero-title">
@@ -32,7 +32,7 @@ const Hero = () => {
 
         <p className="hero-description">
           Yeni nesil voxel tabanlı dünya üretimi. Gerçek dağlar ve okyanuslar,
-          yerçekimiyle düşen bloklar, yere düşen eşyalar ve sınırsız rastgele
+          yüzeye ulaşan mağaralar, yere düşen eşyalar ve sınırsız rastgele
           dünyalarla kendi maceranızı yaratın.
         </p>
 
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.1.9</div>
+            <div className="hero-stat-value">v0.1.10</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

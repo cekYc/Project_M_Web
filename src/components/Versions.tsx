@@ -35,19 +35,178 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.1.9 ========= */}
+        {/* ========= bugfix v0.1.10 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.9</span>
+              <span className="version-number">v0.1.10</span>
               <span className="version-tag latest">En Yeni</span>
+              <span className="version-tag alpha">Bugfix</span>
+            </div>
+            <a
+              href="/alpha_bugfix_v0.1.10/project_m_alpha_bugfix_v0.1.10.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.1.10)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">✨</span> Yeni Özellikler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Eşya Atma (Q Tuşu):</strong> Q tuşu ile seçili eşyadan bir adet,
+                    baktığınız yöne fırlatabiliyorsunuz.
+                  </li>
+                  <li>
+                    <strong>Ölümde Eşya Düşürme:</strong> Öldüğünüzde eşyalarınız öldüğünüz yere
+                    düşüyor ve geri dönüp toplayabiliyorsunuz. Yere düşen eşyalar artık kayda dahil —
+                    oyundan çıkıp girince yerinde duruyor.
+                  </li>
+                  <li>
+                    <strong>Işık Taşı Tarifi:</strong> Çubuk + Halat + Kömür ile Işık Taşı
+                    üretilebiliyor.
+                  </li>
+                  <li>
+                    <strong>Yaratıcılık Modu İyileştirmeleri:</strong> Bloklar yerleştirildiğinde
+                    envanterden tükenmiyor (sınırsız) ve dünyaya girince envanter geniş bir blok
+                    paletiyle otomatik doluyor.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🐛</span> Hata Düzeltmeleri
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Su Artık Kırılamıyor:</strong> Durgun ve akan su blokları kırılıp
+                    envantere alınamıyor; suyun stack'lenip yerleştirilince kaybolması giderildi.
+                  </li>
+                  <li>
+                    <strong>Su Nefes ve Çıkış Fiziği:</strong> Oksijen yalnızca kafa su altındayken
+                    azalıyor; sudan çıkarken yukarı fırlama (4 blok zıplama) engellendi.
+                  </li>
+                  <li>
+                    <strong>Sneak (Ctrl) Düzeltmesi:</strong> Yarım basamak ve kalas türevleri
+                    üzerinde sneak yaparken artık yürünebiliyor; kenarda düşme engellemesi düzgün çalışıyor.
+                  </li>
+                  <li>
+                    <strong>Desteksiz Bitkiler Kırılıyor:</strong> Altındaki blok kırıldığında çimen,
+                    eğrelti, çalı, mantar, sazlık ve Çakıl Taşı artık havada kalmıyor; kırılıp düşüyor.
+                  </li>
+                  <li>
+                    <strong>Bitki Yerleştirme Kuralları:</strong> Bitkiler artık havada veya üst üste
+                    konulamıyor (altında katı blok zorunlu). Halat ve su yere konulamıyor.
+                  </li>
+                  <li>
+                    <strong>Mağara Sistemi Yeniden Yazıldı:</strong> Mağaralar sabit yükseklikte
+                    kesilmiyor; her derinlikte oluşuyor, deniz tabanı kalın kalıyor ve karada yüzeye
+                    açılan girişler eklendi.
+                  </li>
+                  <li>
+                    <strong>Envanter ve Sandık Kaydı:</strong> Ana envanter (30 slot) ve sandık
+                    içerikleri artık doğru kaydediliyor; dünyalar arası geçişte envanterin karışması giderildi.
+                  </li>
+                  <li>
+                    <strong>Su Altındaki Blokları Kırma:</strong> Hedefleme ışını sudan geçip arkadaki
+                    katı bloğu seçtiği için deniz/akan su altındaki bloklar artık kırılabiliyor.
+                  </li>
+                  <li>
+                    <strong>Üretim Matı Depolama Değil:</strong> Mata bırakılan eşyalar envanter
+                    kapatılınca otomatik geri dönüyor (eşya kaybı önlendi).
+                  </li>
+                  <li>
+                    <strong>Sneak ile Kenara Blok Koyma:</strong> Bloğun ucunda sneak yaparken
+                    altınıza/yanınıza blok yerleştirebiliyorsunuz.
+                  </li>
+                  <li>
+                    <strong>Ana Menü Başlık Taşması:</strong> Ana menüdeki sürüm başlığının ekrandan
+                    taşması düzeltildi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Video Gallery */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  🎬 Video Klipler
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_bugfix_v0.1.10/yeryuzune_ulasan_madenler_ve_yeni_isik_kaynagi.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">Yüzeye ulaşan mağaralar &amp; Işık Taşı</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_bugfix_v0.1.10/bitkileri_destekleyen_bloklar_kirildiginda_kirilmasi.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">Desteksiz bitkiler artık kırılıyor</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_bugfix_v0.1.10/sneak_modu_artik_sorunsuz.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">Sneak modu artık sorunsuz</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_bugfix_v0.1.10/envanterden_item_atabilme.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">Q ile envanterden eşya atma</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.1.9 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.1.9</span>
+              <span className="version-tag alpha">Alpha</span>
             </div>
             <a
               href="/alpha_v0.1.9/project_m_alpha_v0.1.9.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.1.9)</span>
+              İndir (v0.1.9)
             </a>
           </div>
 

@@ -35,20 +35,175 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= bugfix v0.1.10 ========= */}
+        {/* ========= v0.2.0 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.1.10</span>
+              <span className="version-number">v0.2.0</span>
               <span className="version-tag latest">En Yeni</span>
+              <span className="version-tag alpha">Varlıklar &amp; 3D</span>
+            </div>
+            <a
+              href="/alpha_v0.2/project_m_alpha_v0.2.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.2.0)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">👾</span> Varlık Sistemi (Entities)
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Canlı Varlıklar:</strong> Dünya artık yaşıyor. Tüm canlılar tek bir
+                    merkezî <code>Entity</code> yapısı ve durum makinesi üzerinden yönetiliyor;
+                    oyuncuyla aynı AABB çarpışma + yerçekimi fiziğini kullanıyorlar.
+                  </li>
+                  <li>
+                    <strong>The Echo (Yankı):</strong> Karada doğan çevik bir avcı. Oyuncuyu fark
+                    edince yana doğru zig-zag sıçramalarla (dash) üstüne atılıyor, tek bloklu
+                    engelleri aşıyor ve temas edince hasar verip geriye itiyor (knockback).
+                  </li>
+                  <li>
+                    <strong>Abyssal Snare (Derinlik Pusu):</strong> Derin suların tabanında bekleyen
+                    bir tuzak. Yaklaşınca oyuncuyu aşağı çekiyor; hasar vermiyor ama yüzeye çıkmanı
+                    engelleyerek oksijenini tüketiyor.
+                  </li>
+                  <li>
+                    <strong>The Cursed Taint (Lanet):</strong> Havada süzülen lanetli varlık.
+                    Çevresindeki doğal blokları periyodik olarak "Lanetli Toprak"a dönüştürerek
+                    dünyayı kirletiyor; öldürünce değerli ganimet düşürüyor.
+                  </li>
+                  <li>
+                    <strong>Varlıkla Savaş &amp; Işıkla Arınma:</strong> Sol tık ile varlıklara
+                    vurabiliyorsunuz (alete göre hasar). Yerleştirilen Işık Taşı çevresindeki Lanetli
+                    Toprağı yavaşça temizleyip doğal hâline döndürüyor.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🧊</span> 3D Kutu-Modeller
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Billboard'lardan 3D'ye:</strong> Yaratıklar ve eşyalar artık 2D düzlemler
+                    değil; kafa/gövde/kol/bacak kutularından oluşan gerçek 3 boyutlu modeller olarak
+                    çiziliyor.
+                  </li>
+                  <li>
+                    <strong>Oyuncu Bedeni:</strong> Artık bir vücudunuz var — insansı bir model
+                    yürürken kollarını ve bacaklarını sallıyor.
+                  </li>
+                  <li>
+                    <strong>Kamera Modları:</strong> Varsayılan 1. şahıs + gövde (aşağı bakınca
+                    bedeninizi görüyorsunuz, <code>F1</code> ile gizlenir) ve <code>F5</code> ile
+                    duvarlara girmeden yaklaşan 3. şahıs kamerası.
+                  </li>
+                  <li>
+                    <strong>Prosedürel Animasyon:</strong> Hıza bağlı yürüyüş salınımı, blok
+                    kırma/saldırı sırasında kol vuruş (chop) animasyonu ve gerçekçi gövde-kafa yönelimi.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">⚡</span> Sistem İyileştirmeleri
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Model Render Hattı:</strong> Vulkan'a ayrı bir model pipeline'ı, skin
+                    sampler descriptor binding'i ve yeni shader'lar (<code>model.vert/frag</code>)
+                    eklendi; tüm modeller tek bir atlasta (<code>models.png</code>) toplanıyor.
+                  </li>
+                  <li>
+                    <strong>Merkezî Model Tanımı:</strong> Tüm modeller (<code>models.rs</code>) kutu
+                    listeleri olarak tanımlanıyor — yeni bir yaratık veya parça eklemek tek bir tablo işi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Video Gallery */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  🎬 Video Klipler
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_v0.2/echo-lar.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">The Echo — zig-zag avcı</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_v0.2/taint-ler.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">The Cursed Taint — dünya bozucu</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_v0.2/first-person-beden.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">1. Şahıs + Gövde (kendi bedenin)</div>
+                  </div>
+                  <div className="gallery-item">
+                    <video
+                      src="/alpha_v0.2/third-person-beden.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                    <div className="gallery-cap">3. Şahıs Kamera (F5)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= bugfix v0.1.10 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.1.10</span>
               <span className="version-tag alpha">Bugfix</span>
             </div>
             <a
               href="/alpha_bugfix_v0.1.10/project_m_alpha_bugfix_v0.1.10.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.1.10)</span>
+              İndir (v0.1.10)
             </a>
           </div>
 

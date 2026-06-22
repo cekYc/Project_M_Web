@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.1.10 — Şimdi Yayında
+          Alpha v0.2.0 — Varlıklar &amp; 3D Modeller
         </div>
 
         <h1 className="hero-title">
@@ -31,9 +31,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          Yeni nesil voxel tabanlı dünya üretimi. Gerçek dağlar ve okyanuslar,
-          yüzeye ulaşan mağaralar, yere düşen eşyalar ve sınırsız rastgele
-          dünyalarla kendi maceranızı yaratın.
+          Dünya artık yaşıyor. İlk canlı varlıklar, 3 boyutlu kutu-modeller,
+          kendi oyuncu bedeniniz ve yeni kamera modlarıyla voxel dünyasında
+          kendi maceranızı yaratın.
         </p>
 
         <div className="hero-actions">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.1.10</div>
+            <div className="hero-stat-value">v0.2.0</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

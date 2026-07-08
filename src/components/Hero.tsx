@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.2.0 — Varlıklar &amp; 3D Modeller
+          Alpha v0.2.1 — Co-op (LAN) &amp; Büyük Bakım
         </div>
 
         <h1 className="hero-title">
@@ -31,9 +31,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          Dünya artık yaşıyor. İlk canlı varlıklar, 3 boyutlu kutu-modeller,
-          kendi oyuncu bedeniniz ve yeni kamera modlarıyla voxel dünyasında
-          kendi maceranızı yaratın.
+          Artık yalnız değilsiniz. Aynı ağdaki arkadaşınızla sunucusuz co-op
+          oynayın; canlı varlıklar, 3 boyutlu modeller ve kendi oyuncu
+          bedeninizle voxel dünyasında birlikte hayatta kalın.
         </p>
 
         <div className="hero-actions">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.2.0</div>
+            <div className="hero-stat-value">v0.2.1</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

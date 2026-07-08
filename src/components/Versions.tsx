@@ -61,116 +61,54 @@ const Versions = () => {
                 </h4>
                 <ul className="changelog-list">
                   <li>
-                    <strong>Sunucusuz Doğrudan Bağlantı:</strong> Ek bir sunucu programı yok — dünyayı
-                    açan oyuncu aynı zamanda sunucudur. Duraklatma menüsündeki <strong>"Dünyayı
-                    Paylaş"</strong> ile co-op açılıyor ve host'un LAN adresi ekranda gösteriliyor;
-                    arkadaşınız ana menüden <strong>"Çok Oyuncu (Katıl)"</strong> ile bu adresi yazarak
-                    bağlanıyor.
+                    <strong>Sunucusuz doğrudan bağlantı:</strong> Dünyayı açan oyuncu host olur
+                    (<strong>"Dünyayı Paylaş"</strong>), arkadaşınız ana menüden LAN adresiyle katılır —
+                    ek sunucu programı yok.
                   </li>
                   <li>
-                    <strong>Dünya Aktarımı (RLE):</strong> Host'un dünyası katılan oyuncuya RLE
-                    sıkıştırmasıyla kademeli gönderiliyor (tek-blok chunk: 16KB → 8 bayt); aktarım
-                    sırasında oyun donmuyor. Dünya, host'un seed'iyle yerel de üretildiği için yalnızca
-                    farklar taşınıyor.
-                  </li>
-                  <li>
-                    <strong>Tam Senkronizasyon:</strong> Oyuncu konum ve animasyonları, blok kırma/koyma
-                    (yerleştirme yönü dahil), varlıklar (AI host'ta çalışır), yere düşen ganimet, eşya
-                    verme ve PvP vuruşları ağ üzerinden eşitleniyor.
-                  </li>
-                  <li>
-                    <strong>Sohbet ve İsimler:</strong> Oyun içinde <code>T</code> ile sohbet açılıyor;
-                    ana menüden takma ad belirleniyor ve oyuncuların üstünde isim etiketleri görünüyor.
-                    Aynı isimle katılanlara otomatik (1), (2)… ekleniyor.
-                  </li>
-                  <li>
-                    <strong>Kalıcı Co-op Envanteri:</strong> Katılan oyuncunun envanteri, host dünyasının
-                    seed'ine bağlı ayrı bir dosyada saklanıyor — çıkıp tekrar katılınca eşyalar geri
-                    geliyor; her host dünyası ayrı envanter tutuyor.
+                    <strong>Tam senkron oynanış:</strong> Oyuncular, bloklar, varlıklar ve PvP ağ
+                    üzerinden eşitleniyor; oyun içi sohbet (<code>T</code>), isim etiketleri ve kalıcı
+                    co-op envanteri dahil.
                   </li>
                 </ul>
               </div>
 
               <div className="changelog-category">
                 <h4 className="changelog-category-title">
-                  <span className="cat-icon">🧭</span> Blok Yönü Sistemi
+                  <span className="cat-icon">✨</span> Oynanış Yenilikleri
                 </h4>
                 <ul className="changelog-list">
                   <li>
-                    <strong>Yöne Göre Yerleşim:</strong> Bloklar artık koyduğunuz yöne göre yerleşiyor
-                    (yön, blok verisinin kullanılmayan üst 4 bitinde saklanıyor; eski kayıtlarla geriye
-                    uyumlu ve co-op'ta senkron).
+                    <strong>Blok Yönü Sistemi:</strong> Bloklar artık koyduğunuz yöne göre yerleşiyor —
+                    kütükler, sandık/fırın, yarım basamak ve dikey kalas doğru yönde duruyor.
                   </li>
                   <li>
-                    <strong>Kütükler &amp; Saman Balyası:</strong> Tıklanan yüzün eksenine uzanıyor — yere
-                    koyunca dikey, duvara koyunca yatay; halka (kesit) dokusu doğru yüzlere geçiyor.
+                    <strong>Daha Doğal Dünya:</strong> Ağaçlar ve bitkiler tek sıra yerine öbekler
+                    halinde, çok daha doğal dağılıyor.
                   </li>
                   <li>
-                    <strong>Sandık / Fırın / Kurutma Askısı:</strong> Ön yüzü, koyan oyuncuya dönüyor.
-                    Açık sandık modeli ve kapak animasyonu da bu yönle birlikte dönüyor.
-                  </li>
-                  <li>
-                    <strong>Yarım Basamak &amp; Dikey Kalas:</strong> Yarım basamak; üste koyunca alt
-                    yarım, tavana koyunca üst yarım oluyor. Dikey kalas artık hücre ortasında asılı
-                    kalmıyor — tıkladığınız yöne yapışıyor.
+                    <strong>Gece/Gündüz Kaydı:</strong> Gün saati artık her dünyaya ayrı kaydediliyor;
+                    her dünya kendi saatinden açılıyor.
                   </li>
                 </ul>
               </div>
 
               <div className="changelog-category">
                 <h4 className="changelog-category-title">
-                  <span className="cat-icon">🐛</span> Hata Düzeltmeleri
+                  <span className="cat-icon">🐛</span> Önemli Düzeltmeler
                 </h4>
                 <ul className="changelog-list">
                   <li>
-                    <strong>Gece/Gündüz Dünyaya Kaydediliyor:</strong> Gün saati artık her dünyanın kendi
-                    kaydında tutuluyor; önceden güneş, dünyalar arası geçişte kaldığı yerden devam ediyordu.
-                    Yeni dünyalar öğlen başlıyor.
+                    <strong>İnce gölge şeritleri:</strong> Chunk sınırlarındaki hatalı gölge şeritleri
+                    giderildi (eski dünyalar yüklenince kendiliğinden düzeliyor).
                   </li>
                   <li>
-                    <strong>Chunk Boyu İnce Gölge Şeritleri:</strong> Işık geçirgenliği artık render
-                    şeffaflığıyla aynı merkezî tablodan okunuyor ve greedy meshing ışık değeri değişince
-                    kesiliyor — eski dünyalardaki şeritler yüklenince kendiliğinden düzeliyor.
+                    <strong>Gerçekten eşsiz seed:</strong> Yeni dünyalar artık birbirine benzemiyor;
+                    seed'in ufak bir değişimi bile bambaşka bir dünya üretiyor.
                   </li>
                   <li>
-                    <strong>Seed Mekaniği Gerçekten Eşsiz:</strong> Seed artık nanosaniye + avalanche
-                    karıştırıcıyla üretiliyor ve tüm yerleşim hash'leri seed'i gerçekten karıştıran tek bir
-                    fonksiyona taşındı — seed'in 1 birim değişmesi bile bambaşka bir dünya üretiyor.
-                  </li>
-                  <li>
-                    <strong>AMD/Intel Açılışta Çökme:</strong> Swapchain present mode tutarsızlığı giderildi
-                    (v0.2 sonrası hotfix bu sürümle yayınlanıyor).
-                  </li>
-                  <li>
-                    <strong>Yeniden Doğma (Respawn):</strong> Ölüm sonrası yeniden doğma akışındaki hata
-                    giderildi.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="changelog-category">
-                <h4 className="changelog-category-title">
-                  <span className="cat-icon">⚡</span> Sistem İyileştirmeleri
-                </h4>
-                <ul className="changelog-list">
-                  <li>
-                    <strong>Doğal Bitki Örtüsü Dağılımı:</strong> Ağaçlar artık tek sıra halinde dizilmiyor;
-                    jitter'lı 5×5 hücre ızgarasına taşındı. Bitkiler düşük frekanslı bir "yama" gürültüsüyle
-                    öbekleniyor — çayır ve mantar kümeleri, araları görece boş.
-                  </li>
-                  <li>
-                    <strong>Merkezî Işık Geçirgenlik Tablosu:</strong> 6 ayrı dosyada elle kopyalanan
-                    şeffaf-blok listeleri tek fonksiyonda (<code>blocks.rs</code>) toplandı — yeni blok
-                    eklerken ışık davranışı artık otomatik doğru.
-                  </li>
-                  <li>
-                    <strong>Modülerleştirme:</strong> 7400 satırlık <code>app.rs</code>, <code>app/</code>
-                    altında alt modüllere (render, world, physics, save, coop, entities, vulkan) bölündü.
-                  </li>
-                  <li>
-                    <strong>Birim Testleri:</strong> Dünya üretimi determinizmi, seed duyarlılığı, hash
-                    kalitesi, doku yönü ve ağ el sıkışması için 10 birim test eklendi
-                    (<code>cargo test</code>).
+                    <strong>AMD/Intel açılış çökmesi:</strong> Bazı AMD/Intel kartlarında açılışta
+                    yaşanan çökme düzeltildi.
                   </li>
                 </ul>
               </div>

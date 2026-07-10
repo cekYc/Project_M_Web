@@ -21,6 +21,7 @@ const Navbar = () => {
         <ul className="navbar-links">
           <li><a href="#features">Özellikler</a></li>
           <li><a href="#showcase">Galeri</a></li>
+          <li><a href="#recipes">Tarif Kitabı</a></li>
           <li><a href="#versions">Sürümler</a></li>
           <li>
             <a href="#download" className="navbar-cta">

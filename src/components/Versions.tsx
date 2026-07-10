@@ -35,20 +35,172 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.2.1 ========= */}
+        {/* ========= v0.2.2 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.2.1</span>
+              <span className="version-number">v0.2.2</span>
               <span className="version-tag latest">En Yeni</span>
+              <span className="version-tag alpha">Ustalık Çağı</span>
+            </div>
+            <a
+              href="/alpha_v0.2.2/project_m_alpha_v0.2.2.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.2.2)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🔥</span> Isı Tabanlı Fırın Sistemi
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Süreç odaklı işleme:</strong> Yakıt önce tutuşmalı (soğuk fırında çok
+                    yavaş; <strong>Çakmak</strong> ile anında), yanan yakıt iç sıcaklığı kendi
+                    karakteristik sıcaklığına çeker, işlenen eşya <strong>ideal sıcaklık bandında</strong> kalmalı.
+                    Bandın üstüne çıkarsan metalin yanar, kalitesi düşer.
+                  </li>
+                  <li>
+                    <strong>Kalite → Dayanıklılık:</strong> İşlenmiş metalin fırın kalitesi (0-100),
+                    ondan üretilen aletin başlangıç dayanıklılığına aktarılır. Özenli fırıncılık = uzun
+                    ömürlü alet.
+                  </li>
+                  <li>
+                    <strong>Yeni işlemeler:</strong> Ham Bakır → İşlenmiş Bakır, Ham Demir → İşlenmiş
+                    Demir, <strong>Kum → Cam</strong>, Çamur → Kerpiç Tuğla,{' '}
+                    <strong>Kırık Taş → Taş</strong>.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🚪</span> İki Bloklu Kapılar
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Akıllı yerleştirme:</strong> Kapı alt+üst iki hücre olarak yerleşir;
+                    menteşe tıklanan noktaya göre sağ/sol seçilir. Yan yana koyunca{' '}
+                    <strong>çift kanat</strong> otomatik oluşur.
+                  </li>
+                  <li>
+                    <strong>Menteşe animasyonu:</strong> Sağ tıkla panel menteşe etrafında dönerek
+                    açılır/kapanır; açık kapının boşluğundan sorunsuz geçilir.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🛡️</span> Zırh, Dayanıklılık &amp; Onarım
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Zırh sistemi:</strong> 4 zırh slotu (kask/zırh/tozluk/kolluk). Tam bakır
+                    takım hasarın <strong>%30</strong>'unu, tam demir takım <strong>%50</strong>'sini
+                    emer. Her darbe zırhı aşındırır.
+                  </li>
+                  <li>
+                    <strong>Dayanıklılık:</strong> Aletler ve zırh kullanıldıkça aşınır; dayanıklılık
+                    bitince eşya kırılıp yok olur.
+                  </li>
+                  <li>
+                    <strong>Örs ile onarım:</strong> 6 İşlenmiş Demir + 2 Taş ile üretilen Örs'e
+                    hasarlı eşya ile sağ tıkla → uygun malzeme karşılığında <strong>%40</strong> onarım.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">✨</span> 36 Yeni Eşya &amp; Denge
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Yeni eşyalar:</strong> Kömür, Ham Bakır/Demir Cevheri, Obsidyen Parçası,
+                    Bakır/Demir/Obsidyen kılıç, balta, kazma (9 alet), 8 zırh parçası, Çakmak, Makas,
+                    Bakır &amp; Demir Kova, Örs ve daha fazlası.
+                  </li>
+                  <li>
+                    <strong>Kılıç artık sadece silah:</strong> Yaprak kırpma Makas'a devredildi. Savaş
+                    hiyerarşisi: çakmak taşı 3 → bakır 5 → demir 7 → obsidyen 10 hasar.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🐛</span> Önemli Düzeltmeler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Işık/Isı bellek patlaması:</strong> Yayılım algoritmaları yüklü olmayan
+                    chunk'lara ilerliyordu; artık yalnızca yüklü chunk'larda yayılıyor.
+                  </li>
+                  <li>
+                    <strong>Eşyalar duvarda kaybolmuyor:</strong> Q ile atılan eşyalar artık katı
+                    bloklara çarpınca önüne düşüyor.
+                  </li>
+                  <li>
+                    <strong>Varlık birikmesi:</strong> Echo, Taint ve Snare'lere doğal ömür eklendi —
+                    nüfus artık döngüde kalıyor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Media placeholder — no videos yet for v0.2.2 */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📖 Tarif Kitabı
+                </div>
+                <div style={{
+                  padding: '2rem',
+                  textAlign: 'center',
+                  color: 'var(--text-secondary)',
+                  fontSize: '0.9rem',
+                  lineHeight: '1.7'
+                }}>
+                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚒️</div>
+                  <p>
+                    Bu sürüm şimdiye kadarki en büyük <strong style={{ color: 'var(--text-primary)' }}>içerik</strong> güncellemesi:
+                    36 yeni eşya, fırın metalürjisi, zırh sistemi ve menteşeli kapılar.
+                  </p>
+                  <p style={{ marginTop: '0.75rem' }}>
+                    Tüm tarifler için{' '}
+                    <a href="#recipes" style={{ color: 'var(--accent-primary)', textDecoration: 'underline' }}>
+                      Tarif Kitabı
+                    </a>{' '}
+                    bölümüne göz atın.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.2.1 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.2.1</span>
               <span className="version-tag alpha">Co-op &amp; Bakım</span>
             </div>
             <a
               href="/alpha_v0.2.1/project_m_alpha_v0.2.1.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.2.1)</span>
+              İndir (v0.2.1)
             </a>
           </div>
 

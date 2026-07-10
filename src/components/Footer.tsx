@@ -11,6 +11,7 @@ const Footer = () => {
         <ul className="footer-links">
           <li><a href="#hero">Ana Sayfa</a></li>
           <li><a href="#features">Özellikler</a></li>
+          <li><a href="#recipes">Tarif Kitabı</a></li>
           <li><a href="#versions">Sürümler</a></li>
         </ul>
       </div>

@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import TechBar from './components/TechBar';
 import Features from './components/Features';
 import Showcase from './components/Showcase';
+import RecipeBook from './components/RecipeBook';
 import Versions from './components/Versions';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
       </div>
       <Features />
       <Showcase />
+      <RecipeBook />
       <Versions />
       <Footer />
     </>

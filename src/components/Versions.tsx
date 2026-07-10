@@ -180,6 +180,32 @@ const Versions = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📖 Tarif Kitabı
+                </div>
+                <div style={{
+                  padding: '2rem',
+                  textAlign: 'center',
+                  color: 'var(--text-secondary)',
+                  fontSize: '0.9rem',
+                  lineHeight: '1.7'
+                }}>
+                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚒️</div>
+                  <p>
+                    Bu sürüm şimdiye kadarki en büyük <strong style={{ color: 'var(--text-primary)' }}>içerik</strong> güncellemesi:
+                    36 yeni eşya, fırın metalürjisi, zırh sistemi ve menteşeli kapılar.
+                  </p>
+                  <p style={{ marginTop: '0.75rem' }}>
+                    Tüm tarifler için{' '}
+                    <a href="#recipes" style={{ color: 'var(--accent-primary)', textDecoration: 'underline' }}>
+                      Tarif Kitabı
+                    </a>{' '}
+                    bölümüne göz atın.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

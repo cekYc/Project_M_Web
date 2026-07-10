@@ -155,31 +155,29 @@ const Versions = () => {
               </div>
             </div>
 
-            {/* Media placeholder — no videos yet for v0.2.2 */}
+            {/* Screenshots */}
             <div className="version-images">
               <div className="comparison-block">
                 <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
-                  📖 Tarif Kitabı
+                  📸 Ekran Görüntüleri
                 </div>
-                <div style={{
-                  padding: '2rem',
-                  textAlign: 'center',
-                  color: 'var(--text-secondary)',
-                  fontSize: '0.9rem',
-                  lineHeight: '1.7'
-                }}>
-                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚒️</div>
-                  <p>
-                    Bu sürüm şimdiye kadarki en büyük <strong style={{ color: 'var(--text-primary)' }}>içerik</strong> güncellemesi:
-                    36 yeni eşya, fırın metalürjisi, zırh sistemi ve menteşeli kapılar.
-                  </p>
-                  <p style={{ marginTop: '0.75rem' }}>
-                    Tüm tarifler için{' '}
-                    <a href="#recipes" style={{ color: 'var(--accent-primary)', textDecoration: 'underline' }}>
-                      Tarif Kitabı
-                    </a>{' '}
-                    bölümüne göz atın.
-                  </p>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.2/firin_paneli_cam_pisirme.png"
+                      alt="v0.2.2 - Fırın Paneli — Cam Pişirme"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Fırın paneli — cam pişirme, sıcaklık göstergesi</div>
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.2/firin_paneli_demir_islemesi.png"
+                      alt="v0.2.2 - Fırın Paneli — Demir İşlemesi"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Fırın paneli — demir işlemesi, kalite bandı</div>
+                  </div>
                 </div>
               </div>
             </div>

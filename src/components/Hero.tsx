@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          Alpha v0.2.2 — Ustalık Çağı: Fırın, Zırh &amp; Kapılar
+          Alpha v0.2.3 — Tarım, Hayvancılık &amp; Keşif Çağı
         </div>
 
         <h1 className="hero-title">
@@ -31,9 +31,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          36 yeni eşya, ısıyla gerçek metalürji yapan fırın, zırh &amp; dayanıklılık
-          sistemi, menteşeli kapılar ve örs ile onarım — voxel dünyasında
-          ustalık çağı başlıyor.
+          Kendi yiyeceğini üret, hayvan yetiştir ve dünyayı keşfe çık.
+          Mevsimler, tarım, çiftlik hayvanları, yeni biyomlar ve ganimet dolu
+          prosedürel yapılarla voxel dünyasında yeni bir çağ başlıyor.
         </p>
 
         <div className="hero-actions">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="hero-stat-label">Biyom Tipi</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-value">v0.2.2</div>
+            <div className="hero-stat-value">v0.2.3</div>
             <div className="hero-stat-label">Güncel Sürüm</div>
           </div>
         </div>

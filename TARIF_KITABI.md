@@ -1,4 +1,4 @@
-# Project M — Tarif Kitabı (Alpha v0.2.2)
+# Project M — Tarif Kitabı (Alpha v0.2.3)
 
 Bu kitap, oyundaki tüm üretim tariflerini, fırın işleme süreçlerini ve onarım
 bilgilerini içerir. Üretim matı tarifleri **tam eşleşme** ister: matta tarifte
@@ -13,7 +13,7 @@ altında ikon olarak belirir — istediğine tıkla, ürünü imlecine al.
 |---|---|---|
 | Çakıl kır | Çakıl + %20 Çakmak Taşı | El ile kırılır |
 | Yaprak kır | %10 Elma, %20 Çubuk | Makas ile çok hızlı kırılır |
-| Uzun Çimen kır | %50 Bitki Halatı | |
+| Uzun Çimen kır | %50 Bitki Halatı, %40 **Buğday Tohumu** | Tarımın başlangıcı |
 | Kömür Cevheri | **Kömür** | Herhangi bir kazma ister |
 | Bakır Cevheri | **Ham Bakır Cevheri** | Herhangi bir kazma ister |
 | Demir Cevheri | **Ham Demir Cevheri** | En az **Bakır Kazma** ister |
@@ -75,10 +75,30 @@ metalin **kalitesi** aletin başlangıç dayanıklılığını belirler!
 | Ürün | Malzemeler | İşe yarar |
 |---|---|---|
 | **Çakmak** | 1 Çakmak Taşı + 1 İşlenmiş Demir | Fırını anında tutuşturur |
-| Makas | 2 İşlenmiş Demir | Yaprak/bitkileri hızlı kırpar |
-| Bakır Kova | 5 İşlenmiş Bakır | (gelecek sürümde sıvı taşıma) |
-| Demir Kova | 5 İşlenmiş Demir | (gelecek sürümde sıvı taşıma) |
+| Makas | 2 İşlenmiş Demir | Yaprak kırpma + **koyun kırkma** |
+| Bakır Kova | 5 İşlenmiş Bakır | Su taşır (32 dökme dayanır) |
+| Demir Kova | 5 İşlenmiş Demir | Su taşır (128 dökme dayanır) |
 | **Örs** | 6 İşlenmiş Demir + 2 Taş | Alet/zırh onarımı |
+| **Dürbün** (v0.2.4) | 2 Cam + 1 İşlenmiş Bakır | Sağ tık basılı: uzağı yakınlaştırır |
+| **Harita** (v0.2.4) | 4 Meşe Kalas + 1 Deri | Elde tutunca keşfedilen bölgelerin kuşbakışı haritası |
+| Kızıl Kalas ×2 (v0.2.4) | 1 Kızıl Kütük | Kızıl orman ahşabı |
+
+> 🗺️ **Keşif (v0.2.4):** Dünyada terk edilmiş evler, kuleler ve tapınaklar;
+> yeraltında destekli maden tünelleri ve mağara şehirleri bulunur. İçlerindeki
+> **ganimet sandıkları** ilk açanı bölgeye göre ödüllendirir (madenlerde cevher,
+> tapınaklarda erzak — nadiren dürbün/harita çıkar). Volkan biyomunda lavdan
+> uzak dur: üstünde durmak yakar ve lav kırılamaz!
+
+### Tarım Aletleri (v0.2.3)
+| Ürün | Malzemeler | İşe yarar |
+|---|---|---|
+| Kürek (4 kademe) | 1 malzeme + 1 Çubuk + 1 Halat | Toprak/kum/çakıl hızlı kazma |
+| **Çapa** (4 kademe) | 2 malzeme + 1 Çubuk + 1 Halat | Çim/toprağı **Sürülmüş Toprak** yapar |
+| **Ekmek** | 3 Buğday | +40 tokluk — en iyi bitkisel yemek |
+
+> Kademe malzemeleri diğer aletlerle aynı: Keskin Çakmak Taşı → İşlenmiş
+> Bakır → İşlenmiş Demir → Keskinleştirilmiş Obsidyen. Çapa tarifi kılıçla
+> aynı malzemeyi kullanır — mat altında iki seçenek birden görünür.
 
 > Not: 5 İşlenmiş Bakır hem Kask hem Kova tarifine uyar — mat altında iki
 > seçenek birden belirir, istediğine tıkla.
@@ -115,6 +135,13 @@ Fırın "koy ve bekle" değildir; **süreci sen yönetirsin**:
 | Kırık Taş | **Taş** | 650–1000° | 15 sn | Kütük |
 | Ham Bakır Cevheri | İşlenmiş Bakır | 750–950° | 20 sn | **Kütük** |
 | Ham Demir Cevheri | İşlenmiş Demir | 1000–1200° | 25 sn | **Kömür** (şart) |
+| Çiğ Tavuk Eti | Pişmiş Tavuk (+35) | 550–800° | 12 sn | Kalas / Kütük |
+| Çiğ Domuz Eti | Pişmiş Domuz (+45) | 600–850° | 14 sn | Kalas / Kütük |
+| Çiğ Biftek | Pişmiş Biftek (+50) | 600–850° | 14 sn | Kalas / Kütük |
+| Çiğ Koyun Eti | Pişmiş Koyun (+40) | 600–850° | 13 sn | Kalas / Kütük |
+
+> 🍖 Pişmiş yemeğin **kalitesi besleyiciliğini** belirler (%70-%100):
+> eti kömür ateşinde yakarsan doyuruculuğu düşer. Etler için kalas/kütük idealdir.
 
 > ⚠️ **Bakırı kömürle pişirme!** Kömür 1100°'ye çıkar, bakırın bandını (950°)
 > aşar — metalin yanar, kalitesi 5'e düşer ve ondan yapılan alet çabuk kırılır.
@@ -154,7 +181,55 @@ Envanterinden 1 malzeme tüketilir, eşya **%40** onarılır.
 
 ---
 
-## 6. Kapı Kullanımı
+## 6. Tarım Rehberi (v0.2.3)
+
+1. **Toprağı sür:** Çapayla çim/toprağa sağ tıkla → Sürülmüş Toprak.
+2. **Sula:** 4 blok içinde su varsa toprak **ıslak** olur (üstü koyulaşır) —
+   ıslak toprakta ekin TAM hızda, kuruda %35 hızda büyür. Kovanla su taşıyıp
+   tarlanın ortasına dökebilirsin (boş kovayla su kaynağına sağ tıkla → dolu
+   kova; dolu kovayla boş hücreye sağ tıkla → su kaynağı).
+3. **Ek:** Sürülmüş toprağa Buğday Tohumu / Patates / Domates ile sağ tıkla.
+4. **Bekle:** Ekinler 4 evrede büyür. **MEVSİM** önemli: İlkbahar %130,
+   Yaz %100, Sonbahar %60, **Kış %0 (büyüme durur!)**. Her mevsim 7 gün sürer.
+5. **Hasat:** Olgun ekini kır — buğday tohum da verir (döngü sürer),
+   patates/domates 2-3 ürün düşürür (bir kısmını yeniden ek).
+
+**Meyve Ağacı:** Meşe yaprağına sağ tıkla → kırmadan elma toplarsın.
+Toplanan yaprak bir süre sonra (kış hariç) yeniden meyve verir.
+
+### Yiyecek Değerleri
+| Yiyecek | Tokluk | | Yiyecek | Tokluk |
+|---|---|---|---|---|
+| Elma | +30 | | Pişmiş Tavuk | +35 |
+| Domates | +22 | | Pişmiş Koyun | +40 |
+| Çiğ Patates | +10 | | Pişmiş Domuz | +45 |
+| **Ekmek** | +40 | | **Pişmiş Biftek** | +50 |
+| Çiğ etler | +8..10 | | | |
+
+---
+
+## 7. Hayvancılık Rehberi (v0.2.3)
+
+Çimenli alanlarda **Tavuk, Koyun, İnek ve Domuz** dolaşır. Vurursan kaçarlar;
+öldürürsen et (+inek deri, +koyun yün) düşürürler. Ama asıl güç ÜRETMEKTE:
+
+* **Besle:** Hayvanın istediği yemle sağ tıkla → üreme moduna girer (başını kaldırır).
+  | Hayvan | Yemi | Ölünce düşürdüğü |
+  |---|---|---|
+  | Tavuk | Buğday Tohumu | Çiğ Tavuk Eti |
+  | Domuz | Patates | Çiğ Domuz Eti ×1-2 |
+  | İnek | Buğday | Çiğ Biftek ×1-2 + Deri |
+  | Koyun | Buğday | Çiğ Koyun Eti + Yün |
+* **Üret:** Aşık iki aynı tür hayvan yakınsa **yavru** doğar (yarı boy).
+  Yavru ~3 dakikada büyür; yem verirsen daha hızlı büyür. Üreyen çift bir
+  süre dinlenir.
+* **Kırk:** Koyuna **Makas** ile sağ tıkla → yün düşer, koyun ölmez;
+  yünü zamanla geri uzar. Yün blok olarak yerleştirilebilir.
+* Çiftlik hayvanları **kalıcıdır**: uzaklaşınca kaybolmaz, dünya kaydına yazılır.
+
+---
+
+## 8. Kapı Kullanımı
 
 * Kapı **zemine** yerleştirilir; üst üste iki boş hücre ister. Alt+üst birlikte
   oluşur, hangisini kırarsan kır **ikisi birden** yok olur ve tek kapı düşer.
@@ -180,6 +255,16 @@ Envanterinden 1 malzeme tüketilir, eşya **%40** onarılır.
 | 66/67 | Meşe Kapı Alt/Üst | 90/91 | 65 | Makas | 117 |
 | 68/69 | Çam Kapı Alt/Üst | 92/93 | 89 | Örs | 118-121 |
 | 70/71 | Huş Kapı Alt/Üst | 94/95 | | | |
+| 90 | Sürülmüş Toprak | 122 kuru / 123 ıslak | 94 | Yün Bloğu | 141 |
+| 91 | Buğday Ekini | 124-127 (4 evre) | 95/96 | Buğday / Tohumu | 136/137 |
+| 92 | Patates Ekini | 128-131 (4 evre) | 97/98 | Patates / Domates | 138/139 |
+| 93 | Domates Ekini | 132-135 (4 evre) | 99 | Ekmek | 140 |
+| 107 | Deri | 142 | 108/109 | Su Dolu B./D. Kova | 143/144 |
+| 121-124 | Kürekler (ÇT/B/D/O) | 145-148 | 125-128 | Çapalar (ÇT/B/D/O) | 149-152 |
+| 129-136 | Çiğ/Pişmiş Etler | 153-160 | 137/138 | Bazalt / Lav | 161/162 |
+| 139 | Kızıl Kütük | 163 halka / 164 kabuk | 140/141 | Kızıl Yaprak / Kalas | 165/166 |
+| 142 | Mantar Sapı | 167 | 143/144 | Kırmızı/Kahve Şapka | 168/169 |
+| 145 | Dürbün | 170 | 146 | Harita | 171 |
 
 Eşya verisi (`ItemStack.data`): aletlerde/zırhta kalan dayanıklılık
 (0 = hiç aşınmamış), işlenmiş metallerde fırın kalitesi (0-100).

@@ -4,7 +4,33 @@ Oyun motorunun gelişimini takip edin. Tüm eski ve yeni sürümleri indirip tes
 
 ---
 
-## v0.2.2 — En Yeni · Ustalık Çağı
+## v0.2.3 — En Yeni · Tarım, Hayvancılık & Keşif Çağı
+
+### 🌱 Mevsimler & Tarım
+- **Mevsim döngüsü:** Her mevsim 7 gün sürer ve büyüme hızını belirler — İlkbahar %130, Yaz %100, Sonbahar %60, **Kış'ta büyüme durur**.
+- **Toprak işleme & sulama:** Çapa ile çim/toprak Sürülmüş Toprak'a döner; kovayla taşınan su 4 blok içindeyse toprak ıslanır (ıslakta tam hız, kuruda yavaş büyür). Kürek ve çapa 4 kademeli (çakmak taşı → bakır → demir → obsidyen).
+- **Mahsuller & yemek:** Buğday, patates ve domates 4 evrede büyür; 3 buğday = ekmek. Meşe yapraklarından kırmadan elma toplanır. Tüm yiyecekler farklı tokluk verir; çiğ etler fırında pişer (pişirme kalitesi besleyiciliği belirler).
+
+### 🐄 Hayvancılık
+- **4 yeni hayvan:** Tavuk, domuz, inek ve koyun — prosedürel 3D modeller, pasif otlama, vurulunca panik kaçışı.
+- **Üreme:** Doğru yemle beslenen yakın iki hayvandan yavru doğar (zamanla büyür).
+- **Kaynaklar:** Ölünce çiğ et (+inek derisi, +koyun yünü); **makasla koyun kırkma** (koyun ölmez, yünü geri uzar). Çiftlik hayvanları kalıcıdır, dünya kaydına yazılır.
+
+### 🌋 Keşif: Yeni Biyomlar
+- **Volkan:** Bazalt kabuk ve yüzeyde lav havuzları — lav kırılamaz, kendi ışığını saçar ve üstünde durmak yakar.
+- **Kızıl Orman & Dev Mantar Ormanı:** Kızıl kütüklü/yapraklı uzun ağaçlar ve sap + şapka bloklarından oluşan prosedürel dev mantarlar.
+
+### 🏛️ Keşif: Yapılar & Ganimet
+- **Prosedürel yapılar:** Terk edilmiş evler, mazgallı kuleler, obsidyen tapınaklar ve yeraltı maden tünelleri / mağara şehirleri — araziye uyumlu, chunk sınırlarında dikişsiz.
+- **Ganimet sandıkları:** Bölgeye göre dolar (madende cevher/kömür, tapınak ve evde erzak/tohum); nadiren **Dürbün** (uzağı yakınlaştırır) ve **Harita** (2D kuşbakışı keşif haritası) çıkar.
+
+### 🐛 Önemli Düzeltmeler
+- **Işık/Isı bellek sızıntısı:** Yayılım artık yalnızca yüklü chunk'larda çalışıyor (v0.2.2'den kalan gizli hata giderildi).
+- **Ekinlerde çarpışma:** Ekinler ve çapraz-çizim bitkiler artık doğru şekilde içinden geçilebiliyor.
+
+---
+
+## v0.2.2 — Ustalık Çağı
 
 ### 🔥 Isı Tabanlı Fırın Sistemi
 - **Süreç odaklı işleme:** Yakıt önce tutuşmalı (soğuk fırında çok yavaş; **Çakmak** ile anında), yanan yakıt iç sıcaklığı kendi karakteristik sıcaklığına çeker, işlenen eşya **ideal sıcaklık bandında** kalmalı. Bandın üstüne çıkarsan metalin yanar, kalitesi düşer.

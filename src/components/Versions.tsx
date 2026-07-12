@@ -35,20 +35,180 @@ const Versions = () => {
           </p>
         </div>
 
-        {/* ========= v0.2.2 ========= */}
+        {/* ========= v0.2.3 ========= */}
         <div className="version-block reveal" id="download">
           <div className="version-header">
             <div className="version-info">
-              <span className="version-number">v0.2.2</span>
+              <span className="version-number">v0.2.3</span>
               <span className="version-tag latest">En Yeni</span>
+              <span className="version-tag alpha">Tarım &amp; Keşif</span>
+            </div>
+            <a
+              href="/alpha_v0.2.3/project_m_alpha_v0.2.3.exe"
+              download
+              className="btn btn-primary btn-sm"
+            >
+              <span>⬇ İndir (v0.2.3)</span>
+            </a>
+          </div>
+
+          <div className="version-content">
+            {/* Changelog */}
+            <div className="version-changelog">
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🌱</span> Mevsimler &amp; Tarım
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Mevsim döngüsü:</strong> Her mevsim 7 gün sürer ve büyüme hızını belirler —
+                    İlkbahar %130, Yaz %100, Sonbahar %60, <strong>Kış'ta büyüme durur</strong>.
+                  </li>
+                  <li>
+                    <strong>Toprak işleme &amp; sulama:</strong> Çapa ile çim/toprak Sürülmüş Toprak'a
+                    döner; kovayla taşınan su 4 blok içindeyse toprak ıslanır (ıslakta tam hız, kuruda
+                    yavaş büyür). Kürek ve çapa 4 kademeli (çakmak taşı → bakır → demir → obsidyen).
+                  </li>
+                  <li>
+                    <strong>Mahsuller &amp; yemek:</strong> Buğday, patates ve domates 4 evrede büyür;
+                    3 buğday = ekmek. Meşe yapraklarından kırmadan elma toplanır. Çiğ etler fırında pişer
+                    ve pişirme kalitesi besleyiciliği belirler.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🐄</span> Hayvancılık
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>4 yeni hayvan:</strong> Tavuk, domuz, inek ve koyun — prosedürel 3D modeller,
+                    pasif otlama, vurulunca panik kaçışı.
+                  </li>
+                  <li>
+                    <strong>Üreme:</strong> Doğru yemle beslenen yakın iki hayvandan yavru doğar (zamanla
+                    büyür).
+                  </li>
+                  <li>
+                    <strong>Kaynaklar:</strong> Ölünce çiğ et (+inek derisi, +koyun yünü);
+                    <strong> makasla koyun kırkma</strong> (koyun ölmez, yünü geri uzar). Çiftlik
+                    hayvanları kalıcıdır, dünya kaydına yazılır.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🌋</span> Keşif: Yeni Biyomlar
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Volkan:</strong> Bazalt kabuk ve yüzeyde lav havuzları — lav kırılamaz, kendi
+                    ışığını saçar ve üstünde durmak yakar.
+                  </li>
+                  <li>
+                    <strong>Kızıl Orman &amp; Dev Mantar Ormanı:</strong> Kızıl kütüklü/yapraklı uzun
+                    ağaçlar ve sap + şapka bloklarından oluşan prosedürel dev mantarlar.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🏛️</span> Keşif: Yapılar &amp; Ganimet
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Prosedürel yapılar:</strong> Terk edilmiş evler, mazgallı kuleler, obsidyen
+                    tapınaklar ve yeraltı maden tünelleri / mağara şehirleri — araziye uyumlu, chunk
+                    sınırlarında dikişsiz.
+                  </li>
+                  <li>
+                    <strong>Ganimet sandıkları:</strong> Bölgeye göre dolar (madende cevher/kömür, tapınak
+                    ve evde erzak/tohum); nadiren <strong>Dürbün</strong> (uzağı yakınlaştırır) ve
+                    <strong> Harita</strong> (2D kuşbakışı keşif haritası) çıkar.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="changelog-category">
+                <h4 className="changelog-category-title">
+                  <span className="cat-icon">🐛</span> Önemli Düzeltmeler
+                </h4>
+                <ul className="changelog-list">
+                  <li>
+                    <strong>Işık/Isı bellek sızıntısı:</strong> Yayılım artık yalnızca yüklü chunk'larda
+                    çalışıyor (v0.2.2'den kalan gizli hata giderildi).
+                  </li>
+                  <li>
+                    <strong>Ekinlerde çarpışma:</strong> Ekinler ve çapraz-çizim bitkiler artık doğru
+                    şekilde içinden geçilebiliyor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Screenshots */}
+            <div className="version-images">
+              <div className="comparison-block">
+                <div className="comparison-title" style={{ color: 'var(--text-secondary)' }}>
+                  📸 Ekran Görüntüleri
+                </div>
+                <div className="gallery-grid">
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.3/tarim.png"
+                      alt="v0.2.3 - Tarım, Mevsimler ve Sulama"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Tarım — mevsimler, mahsuller &amp; sulama</div>
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.3/bir_cok_yeni_pasif_canlilar.png"
+                      alt="v0.2.3 - Yeni Çiftlik Hayvanları"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Yeni pasif hayvanlar — tavuk, domuz, inek, koyun</div>
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.3/yeni_biyomlar.png"
+                      alt="v0.2.3 - Yeni Biyomlar"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Yeni biyomlar — volkan, kızıl orman, dev mantar</div>
+                  </div>
+                  <div className="gallery-item">
+                    <img
+                      src="/alpha_v0.2.3/bir_cok_yeni_yapilar.png"
+                      alt="v0.2.3 - Prosedürel Yapılar"
+                      loading="lazy"
+                    />
+                    <div className="gallery-cap">Prosedürel yapılar &amp; ganimet sandıkları</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-divider" style={{ margin: '4rem auto' }} />
+
+        {/* ========= v0.2.2 ========= */}
+        <div className="version-block reveal">
+          <div className="version-header">
+            <div className="version-info">
+              <span className="version-number">v0.2.2</span>
               <span className="version-tag alpha">Ustalık Çağı</span>
             </div>
             <a
               href="/alpha_v0.2.2/project_m_alpha_v0.2.2.exe"
               download
-              className="btn btn-primary btn-sm"
+              className="btn btn-secondary btn-sm"
             >
-              <span>⬇ İndir (v0.2.2)</span>
+              İndir (v0.2.2)
             </a>
           </div>
 
